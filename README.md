@@ -1,208 +1,57 @@
-# 🍽️ Viknesh — Premium Luxury Restaurant Website
+# Viknesh – Premium Luxury Restaurant Website
 
-A sophisticated, elegant, and timeless restaurant website built with **React.js** and **Tailwind CSS**, featuring a stunning Black & Gold color palette.
+## Overview
 
----
+**Viknesh** is a premium luxury restaurant website built using **React.js** and **Tailwind CSS**, featuring a sophisticated Black & Gold color palette that creates an elegant and timeless dining experience. The website combines modern design, smooth animations, and responsive layouts to provide visitors with a visually engaging and seamless browsing experience.
 
-## ✨ Features
+## Navigation
 
-- **Transparent → Solid Navbar** on scroll with mobile hamburger menu
-- **Cinematic Hero** section with animated floating elements and scroll indicator
-- **About Section** with statistics cards (15+ Years, 40+ Chefs, 120+ Dishes, 25K+ Guests)
-- **Signature Menu** with 6 premium food cards — zoom on hover, gold border
-- **Why Choose Us** with 6 icon cards and glow hover effects
-- **Chef Section** with awards timeline and specialty tags
-- **Masonry Gallery** with category filters and lightbox preview
-- **Reservation Form** with all 8 fields + opening hours panel
-- **Reviews** with guest cards and 4.9 average rating display
-- **Contact Section** with map placeholder, info cards, contact form, social links
-- **Footer** with newsletter subscription, Instagram grid, quick links
-- **Scroll reveal animations** on every section
-- **Fully responsive** — mobile, tablet, desktop
+The website features a transparent navigation bar that smoothly changes to a solid background when the user scrolls. It also includes a responsive mobile hamburger menu, ensuring easy navigation across all devices.
 
----
+## Hero Section
 
-## 🚀 Getting Started
+The cinematic hero section welcomes visitors with elegant floating animations, eye-catching visuals, and a scroll indicator that encourages users to explore the website.
 
-### Prerequisites
+## About Section
 
-Make sure you have installed:
-- [Node.js](https://nodejs.org/) (v16 or higher)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
-- [Git](https://git-scm.com/)
+The About section introduces the restaurant and highlights its achievements through attractive statistics cards, showcasing **15+ years of experience**, **40+ professional chefs**, **120+ signature dishes**, and **25,000+ satisfied guests**.
 
----
+## Signature Menu
 
-### 1. Clone the Repository
+The Signature Menu displays six premium food items with elegant cards featuring hover zoom effects and luxurious gold borders, enhancing the visual appeal of each dish.
 
-```bash
-git clone https://github.com/YOUR_USERNAME/viknesh-restaurant.git
-cd viknesh-restaurant
-```
+## Why Choose Us
 
----
+The Why Choose Us section presents six key features using beautifully designed icon cards with glowing hover effects, emphasizing the restaurant's quality, service, and commitment to excellence.
 
-### 2. Install Dependencies
+## Chef Section
 
-```bash
-npm install
-```
+The Chef section introduces the restaurant's head chef with a professional profile, an awards timeline, and specialty tags that highlight culinary expertise and accomplishments.
 
----
+## Gallery
 
-### 3. Start the Development Server
+The Masonry Gallery allows visitors to browse stunning restaurant images through category filters and an interactive lightbox preview, creating an immersive viewing experience.
 
-```bash
-npm start
-```
+## Reservation
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+The Reservation section includes a comprehensive booking form with eight input fields along with an opening hours panel, making table reservations simple and convenient.
 
-The page will hot-reload whenever you make changes.
+## Customer Reviews
 
----
+The Reviews section showcases guest testimonials and prominently displays an impressive average customer rating of **4.9 stars**, helping build trust and credibility.
 
-### 4. Build for Production
+## Contact
 
-```bash
-npm run build
-```
+The Contact section provides a map placeholder, contact information cards, social media links, and a contact form, making it easy for customers to connect with the restaurant.
 
-This creates an optimized production build in the `build/` folder.
+## Footer
 
----
+The footer contains a newsletter subscription form, an Instagram image grid, quick navigation links, and additional useful information, providing a complete and professional website ending.
 
-## 📁 Project Structure
+## Animations
 
-```
-viknesh-restaurant/
-├── public/
-│   └── index.html              # HTML template with Google Fonts
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx          # Sticky navbar with mobile menu
-│   │   ├── Hero.jsx            # Full-screen cinematic hero
-│   │   ├── About.jsx           # Two-column about + stats
-│   │   ├── Menu.jsx            # 6 premium food cards
-│   │   ├── WhyChooseUs.jsx     # 6 icon feature cards
-│   │   ├── Chef.jsx            # Chef portrait + awards timeline
-│   │   ├── Gallery.jsx         # Masonry gallery with filters
-│   │   ├── Lightbox.jsx        # Gallery lightbox modal
-│   │   ├── Reservation.jsx     # Booking form + opening hours
-│   │   ├── Reviews.jsx         # Customer review cards
-│   │   ├── Contact.jsx         # Map + info + contact form
-│   │   ├── Footer.jsx          # Full footer with newsletter
-│   │   └── SectionHeader.jsx   # Reusable section title component
-│   ├── context/
-│   │   └── LightboxContext.jsx # React context for gallery lightbox
-│   ├── App.jsx                 # Root component
-│   ├── index.js                # React entry point
-│   └── index.css               # Global styles + Tailwind + custom CSS
-├── tailwind.config.js          # Tailwind theme extension
-├── postcss.config.js           # PostCSS config
-├── package.json
-└── README.md
-```
+Smooth scroll reveal animations are implemented throughout every section of the website, creating an engaging and modern user experience.
 
----
+## Responsive Design
 
-## 🎨 Color Palette
-
-| Token          | Hex                     |
-|----------------|-------------------------|
-| Background     | `#0B0B0B`               |
-| Surface        | `#161616`               |
-| Card           | `#1F1F1F`               |
-| Primary Gold   | `#D4AF37`               |
-| Light Gold     | `#F5E6A9`               |
-| Dark Gold      | `#B8860B`               |
-| Text           | `#FFFFFF`               |
-| Secondary Text | `#CFCFCF`               |
-| Border         | `rgba(212,175,55,0.25)` |
-
----
-
-## 🔤 Typography
-
-| Role      | Font                |
-|-----------|---------------------|
-| Headings  | Playfair Display    |
-| Subheadings | Cormorant Garamond |
-| Body      | Poppins             |
-| Buttons   | Inter SemiBold      |
-
----
-
-## 🌐 Deploy to GitHub Pages
-
-### 1. Install gh-pages
-
-```bash
-npm install --save-dev gh-pages
-```
-
-### 2. Add to package.json
-
-```json
-"homepage": "https://YOUR_USERNAME.github.io/viknesh-restaurant",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
-```
-
-### 3. Deploy
-
-```bash
-npm run deploy
-```
-
----
-
-## 📤 Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "feat: initial Viknesh luxury restaurant website"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/viknesh-restaurant.git
-git push -u origin main
-```
-
----
-
-## 🛠️ Tech Stack
-
-- **React.js** 18 — Component-based architecture
-- **Tailwind CSS** 3 — Utility-first styling
-- **Lucide React** — Icon library
-- **Google Fonts** — Playfair Display, Cormorant Garamond, Poppins, Inter
-
----
-
-## 📱 Responsive Breakpoints
-
-| Breakpoint | Width   |
-|------------|---------|
-| Mobile     | < 640px |
-| Tablet     | 640px – 1024px |
-| Desktop    | > 1024px |
-
----
-
-## 🎓 Internship Notes
-
-This project demonstrates:
-- ✅ Component-based architecture (14 reusable components)
-- ✅ React Hooks (`useState`, `useEffect`, `useContext`)
-- ✅ Custom React Context API (Lightbox)
-- ✅ Controlled forms with validation
-- ✅ Tailwind CSS utility classes + custom CSS
-- ✅ Scroll-based animations using IntersectionObserver
-- ✅ Responsive design (mobile-first)
-- ✅ Clean, readable, commented code
-
----
-
-*Designed & built for the Frontend Internship Task 2 — UI Implementation*
+The entire website is fully responsive and optimized for **mobile**, **tablet**, and **desktop** devices, ensuring consistent performance and an excellent user experience across all screen sizes.
